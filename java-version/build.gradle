@@ -21,9 +21,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    testImplementation rootProject.ext.dependencies["junit"]
     implementation rootProject.ext.dependencies["appcompat-v7"]
     implementation rootProject.ext.dependencies["okhttp"]
     implementation rootProject.ext.dependencies["gson"]
-    testImplementation rootProject.ext.dependencies["junit"]
+    implementation rootProject.ext.dependencies["rxjava"]
+    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation rootProject.ext.dependencies["glide"]
+    annotationProcessor rootProject.ext.dependencies["glidecompiler"]
 }
